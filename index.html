@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html translate="no">
 
 <head>
     <meta charset="UTF-8">
@@ -9,18 +9,26 @@
 </head>
 
 <body>
-    <div>ITEM 1</div>
-    <div class="flex flex-column">
-        <div>ITEM 2.1</div>
-        <div>ITEM 2.2</div>
-        <div>ITEM 2.3</div>
-    </div>
-    <div>
-        <input class="input" type="text" />
-    </div>
-    <div>ITEM 4</div>
-    <div>ITEM 5</div>
-    <div>ITEM 6</div>
+    <main class="container">
+        <h1 style="text-align: center; margin-top: 2rem;">Cálculo de IMC</h1>
+
+        <div class="flex flex-column gap-15">
+            <input class="input-form" type="text" placeholder="Altura" />
+            <input class="input-form" type="text" placeholder="Peso" />
+            <input class="input-form" type="text" placeholder="Sexo" />
+        </div>
+
+        <div class="input-checkbox">
+            <input class="input" type="checkbox" />
+            <label>Eu tenho 65 anos ou mais</label>
+        </div>
+
+        <div class="flex flex-column gap-15">
+            <button type="button" class="botao botao-prenchido">Calcular meu IMC</button>
+            <button type="button" class="botao botao-apenas-borda">Entenda o cálculo</button>
+        </div>
+    </main>
+
 </body>
 
 </html>
